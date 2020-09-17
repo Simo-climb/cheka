@@ -9,7 +9,7 @@
 <One>
     a void:Dataset ;
     dct:title "Dataset One" ;
-    dct:conformsTo <http://example.org/profile/Profile_C> ;
+    dct:conformsTo <http://example.org/profile/Profile_A> ;
     dct:creator <https://orcid.org/0000-0002-8742-7730> ; # Nicholas J. Car, IDed via ORCID
     dct:created "2020-02-16"^^xsd:date
 .
@@ -26,4 +26,5 @@
     dct:title "Dataset Two" ;
     dct:conformsTo <http://example.org/profile/Profile_B> ;
     dct:creator <https://orcid.org/0000-0002-8742-7730> ; # Nicholas J. Car, IDed via ORCID
+    dct:created "2020-02-16"^^xsd:date
 .

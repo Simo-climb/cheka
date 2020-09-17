@@ -1,3 +1,6 @@
 pyshacl
-requests
-pytest
+requests~=2.24.0
+pytest~=6.0.1
+
+rdflib~=5.0.0
+setuptools~=41.2.0

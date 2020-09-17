@@ -2,6 +2,8 @@ import pytest
 import sys
 sys.path.append('..')
 from cheka import Cheka
+from os.path import join, abspath, dirname
+
 
 """
 These tests check that multiple objects in the data graph can be validated only according to the Profiles they claim 
@@ -18,7 +20,7 @@ global c
 
 def setup():
     global c
-    c = Cheka('test_02_d.ttl', 'test_01_p.ttl')
+    c = Cheka(data_graph_file_path=join(dirname(__file__), "test_02_d.ttl"), profiles_graph_file_path=join(dirname(__file__), "test_01_p.ttl"))
 
 
 def test_validate():

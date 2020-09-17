@@ -2,6 +2,7 @@ import pytest
 import sys
 sys.path.append('..')
 from cheka import Cheka
+from os.path import join, abspath, dirname
 
 """
 These most basic tests ensure that a single thing in a data graph can be validated according to a profile hierarchy for 
@@ -12,7 +13,7 @@ global c
 
 def setup():
     global c
-    c = Cheka('test_01_d.ttl', 'test_01_p.ttl')
+    c = Cheka(data_graph_file_path=join(dirname(__file__), "test_01_d.ttl"), profiles_graph_file_path=join(dirname(__file__), "test_01_p.ttl"))
 
 
 def test_validate_simple():
